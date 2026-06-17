@@ -1,9 +1,17 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { CalendarIcon } from "../buttons/LinkButton";
 import { navData } from "./navData";
 
 const LandingNavbar = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    return;
+  };
   return (
     <header className="max_screen_width w-full">
       {/* TOP BAR */}
@@ -21,7 +29,19 @@ const LandingNavbar = () => {
               />
             </div>
           </Link>
-
+          <ul className="lg:flex border hidden border-white/15 bg-white/10 backdrop-blur-lg px-5 py-2.5  rounded-full items-center gap-8 ml-36 w-fit self-center-safe">
+            {navData.links.map((link, index) => (
+              <li key={index}>
+                <button
+                  onClick={() => scrollToSection(link.href)}
+                  type="button"
+                  className="text-white"
+                >
+                  {link.label}
+                </button>
+              </li>
+            ))}
+          </ul>
           {/* BUTTON */}
           <ul className="flex items-center gap-2">
             {navData.buttons.map((link, index) => (
@@ -30,7 +50,7 @@ const LandingNavbar = () => {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 rounded-full bg-primary text-white text-white px-2 md:px-6 py-2 md:py-3"
+                  className="flex items-center gap-2 rounded-full bg-primary text-white px-2 md:px-6 py-2 md:py-3"
                 >
                   <span className="">
                     <CalendarIcon />

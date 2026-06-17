@@ -33,9 +33,9 @@ const LandingFooter = () => {
             <p className="text-white text-center max-md:text-center">
               {footerData.description}
             </p>
-            <ul className="flex flex-wrap lg:gap-4 gap-2 w-full items-center justify-center">
+            <ul className="flex lg:gap-4 gap-2 w-full items-center justify-center">
               {footerData.cta.map((button, i) => (
-                <li key={i} className="max-md:w-full">
+                <li key={i} className="">
                   <LinkButton
                     {...button}
                     target="_blank"
