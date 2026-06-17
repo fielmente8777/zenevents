@@ -3,6 +3,7 @@ import { Container, Section } from "../sectionComponants";
 import LandingNavbar from "../navbar/LandingNavbar";
 import Form1 from "../forms/Form1";
 import { SectionHeading } from "../typography";
+import Form2 from "../forms/Form2";
 
 interface ImageBannerProps {
   tag: string;
@@ -98,7 +99,7 @@ const ImageBanner: React.FC<ImageBannerProps> = ({
             className="bg-[#FCF0EDCC] md:flex hidden py-6 px-2 rounded-[40px]  flex-col gap-3 "
             id="form"
           >
-            <Form1 />
+            <Form2 singleDate />
             <p
               className="text-sm text-primary max-w-3xl text-center mx-auto"
               dangerouslySetInnerHTML={{ __html: benefit }}

@@ -1,12 +1,12 @@
 import ImageBanner from "@/components/banners/ImageBanner";
+import Form2 from "@/components/forms/Form2";
+import { Container, Section } from "@/components/sectionComponants";
 import About from "./components/About";
 import Events from "./components/Events";
 import { landingPageData } from "./components/landingPageData";
 import OurPromise from "./components/OurPromise";
 import SlidingGallery from "./components/SlidingGallery";
 import WhyZenEvent from "./components/WhyZenEvent";
-import { Container, Section } from "@/components/sectionComponants";
-import Form1 from "@/components/forms/Form1";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <Section defaultPadding={false} className="md:hidden block ">
         <Container className="bg-secondary/30">
           <div className="py-6 flex flex-col gap-5 w-full mx-auto" id="form">
-            <Form1 />
+            <Form2 singleDate />
             <p
               className="text-sm text-tertiary max-w-3xl text-center mx-auto"
               dangerouslySetInnerHTML={{
