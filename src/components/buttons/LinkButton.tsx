@@ -6,6 +6,7 @@ interface LinkButtonProps {
   href: string;
   label: string;
   className?: string;
+  labelClass?: string;
   whatsAppIcon?: boolean;
   callIcon?: boolean;
   calendarIcon?: boolean;
@@ -20,6 +21,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
   href,
   label,
   className = "",
+  labelClass = "",
   arrowIcon = false,
   whatsAppIcon = false,
   callIcon = false,
@@ -38,7 +40,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
           {whatsAppIcon && <WhatsAppIcon />}
           {callIcon && <CallIcon />}
           {calendarIcon && <CalendarIcon />}
-          {label}
+          <span className={`${labelClass}`}> {label}</span>
 
           {arrowIcon && (
             <span>
@@ -57,7 +59,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
           {whatsAppIcon && <WhatsAppIcon />}
           {callIcon && <CallIcon />}
           {calendarIcon && <CalendarIcon />}
-          {label}
+          <span className={`${labelClass}`}> {label}</span>
 
           {arrowIcon && (
             <span>

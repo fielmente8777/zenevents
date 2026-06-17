@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { contact } from "@/utils/constent";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,11 +6,12 @@ import { usePathname } from "next/navigation";
 import LazyLoadedMap from "../map/LazyLoadedMap";
 import { Container } from "../sectionComponants";
 import { footerData } from "./footerdata";
+import LinkButton from "../buttons/LinkButton";
 
 const LandingFooter = () => {
-  const pathName= usePathname()
-  if (pathName === "/thank-you/"){
-    return null
+  const pathName = usePathname();
+  if (pathName === "/thank-you/") {
+    return null;
   }
   return (
     <footer className="max_screen_width bg-background3 text-white">
@@ -32,20 +33,22 @@ const LandingFooter = () => {
             <p className="text-white text-center max-md:text-center">
               {footerData.description}
             </p>
-            {/* <ul className="flex flex-wrap lg:gap-4 gap-2 w-full items-center">
+            <ul className="flex flex-wrap lg:gap-4 gap-2 w-full items-center justify-center">
               {footerData.cta.map((button, i) => (
                 <li key={i} className="max-md:w-full">
                   <LinkButton
                     {...button}
                     target="_blank"
+                    labelClass="hidden"
                     rel="noopener noreferrer"
-                    className="bg-primary text-white rounded-full border-none max-md:w-full justify-center py-3 px-4"
-                    whatsAppIcon={i === 0}
-                    calendarIcon={i === 1}
+                    className="bg-primary text-white rounded-full border-none max-md:w-full justify-center p-0! w-12! aspect-square flex items-center"
+                    whatsAppIcon={i === 1}
+                    calendarIcon={i === 2}
+                    callIcon={i === 0}
                   />
                 </li>
               ))}
-            </ul> */}
+            </ul>
           </div>
 
           {footerData.lists.map((list, index) => (

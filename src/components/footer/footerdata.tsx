@@ -45,6 +45,10 @@ export const footerData: FooterData = {
     "Elevating events with premium sushi artistry and refined Japanese hospitality since 2012.",
   cta: [
     {
+      label: "CALL NOW",
+      href: contact.callCta,
+    },
+    {
       label: "ENQUIRE NOW",
       href: contact.WhatsappCta,
     },

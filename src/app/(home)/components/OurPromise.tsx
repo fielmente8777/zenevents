@@ -1,6 +1,7 @@
 import LinkButton from "@/components/buttons/LinkButton";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import { SectionHeading } from "@/components/typography";
+import Image from "next/image";
 
 interface OurPromiseProps {
   tag: string;
@@ -21,9 +22,43 @@ const OurPromise: React.FC<OurPromiseProps> = ({
   tagLine,
 }) => {
   return (
-    <SectionWithContainer>
-      <div className="bg-linear-[140deg,#1C1010E0,#1C1010B2,#8B1A1A80] max-w-5xl w-full mx-auto rounded-4xl">
-        <div className="flex flex-col gap-6 items-center py-14 px-4 max-w-3xl w-full mx-auto ">
+    <SectionWithContainer sectionClassName="relative">
+      <div className="w-fit absolute bottom-2 left-2">
+        <div className="lg:w-36.5 w-10 aspect-square relative">
+          <Image
+            src="/SVG.png"
+            alt="alt"
+            fill
+            sizes="146px"
+            className="animate-[spin_8s_linear_infinite]"
+          />
+        </div>
+      </div>
+      <div className="bg-linear-[140deg,#1C1010E0,#1C1010B2,#8B1A1A80] max-w-5xl w-full mx-auto rounded-4xl shadow relative">
+        <div className="w-fit absolute bottom-4 left-4">
+          <div className="lg:w-15 w-8 aspect-square relative">
+            <Image
+              src="/SVG-1.png"
+              alt="alt"
+              fill
+              sizes="60px"
+              className="animate-[spin_8s_linear_infinite]"
+            />
+          </div>
+        </div>
+        <div className="w-fit absolute top-4 right-4">
+          <div className="lg:w-28 w-15 aspect-square relative">
+            <Image
+              src="/SVG-1.png"
+              alt="alt"
+              fill
+              sizes="112px"
+              className="animate-[spin_8s_linear_infinite]"
+            />
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-6 items-center max-lg:py-10 lg:pt-24 pb-12 px-4 max-w-2xl w-full mx-auto ">
           <p className="text-sm tracking-widest w-fit uppercase border border-tertiary/30 rounded-full bg-tertiary/10 backdrop-blur-sm text-tertiary px-4 py-1">
             {tag}
           </p>

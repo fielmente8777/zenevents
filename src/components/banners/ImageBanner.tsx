@@ -35,12 +35,20 @@ const ImageBanner: React.FC<ImageBannerProps> = ({
       <div className="absolute inset-0 z-10 bg-linear-[-20deg] from-[#1c1010]/72 from-0% via-40% via-[#1c1010]/45 to-100%  to-black/95 " />
 
       <div className="absolute inset-0  z-20 flex items-end pb-10 justify-center">
-        <Container className="flex flex-col lg:gap-14 gap-6 ">
-          <div className="w-fit absolute -top-10 right-0">
-            <Image src="/SVG-1.png" alt="alt" width={90} height={90} className="animate-[spin_8s_linear_infinite]"/>
+        <Container className="flex flex-col lg:gap-14 gap-6 relative">
+          <div className="w-fit absolute top-26 lg:-top-10 right-0">
+            <div className="lg:w-[90px] w-[60px] aspect-square relative">
+              <Image
+                src="/SVG-1.png"
+                alt="alt"
+                fill
+                sizes="90px"
+                className="animate-[spin_8s_linear_infinite]"
+              />
+            </div>
           </div>
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 max-md:gap-30">
-            <div className="">
+            <div className="space-y-2">
               <p className="flex items-center gap-2 text-sm text-white w-fit bg-[#1C1010]/99 px-4 py-1.25 rounded-full">
                 <span>
                   <Foo />
@@ -76,7 +84,9 @@ const ImageBanner: React.FC<ImageBannerProps> = ({
                     >
                       {card.title}
                     </p>
-                    <p className={` uppercase max-md:text-xs ${i !== 1 ? "text-secondary" : "text-dark"}`}>
+                    <p
+                      className={` uppercase max-md:text-xs ${i !== 1 ? "text-secondary" : "text-dark"}`}
+                    >
                       {card.description}
                     </p>
                   </div>
@@ -85,7 +95,7 @@ const ImageBanner: React.FC<ImageBannerProps> = ({
             </div>
           </div>
           <div
-            className="bg-[#FCF0EDCC] md:block hidden py-6 px-2 rounded-[40px] flex flex-col gap-3 "
+            className="bg-[#FCF0EDCC] md:flex hidden py-6 px-2 rounded-[40px]  flex-col gap-3 "
             id="form"
           >
             <Form1 />

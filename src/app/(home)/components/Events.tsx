@@ -35,7 +35,21 @@ const Events: React.FC<EventsProps> = ({
   ];
 
   return (
-    <SectionWithContainer containerClassName="md:space-y-12 space-y-6">
+    <SectionWithContainer
+      containerClassName="md:space-y-12 space-y-6"
+      sectionClassName="background-color-2 relative"
+    >
+      <div className="w-fit absolute top-2 right-2">
+        <div className="lg:w-36.5 w-20 aspect-square relative">
+          <Image
+            src="/SVG.png"
+            alt="alt"
+            fill
+            sizes="146px"
+            className="animate-[spin_8s_linear_infinite]"
+          />
+        </div>
+      </div>
       <div className="grid lg:grid-cols-2 grid-cols-1 items-end">
         <div className="space-y-2 max-w-md w-full">
           <p className="px-4 py-1 max-md:text-sm w-fit text-tertiary tracking-widest uppercase border border-tertiary rounded-full bg-tertiary/10  backdrop-blur-sm">
@@ -51,18 +65,20 @@ const Events: React.FC<EventsProps> = ({
             key={index}
             className={`${
               gridPattern[index % gridPattern.length]
-            } overflow-hidden  w-full h-full rounded-xl lg:rounded-4xl relative aspect-auto`}
+            } overflow-hidden  w-full h-full rounded-xl group lg:rounded-4xl relative aspect-auto`}
           >
             <Image
               src={src.image}
               alt={`Gallery Image ${index + 1}`}
               fill
               sizes="100vw"
-              className="object-cover"
+              className="object-cover group-hover:scale-110 transition-all duration-500"
             />
             <div className="absolute inset-0 z-10 bg-linear-to-t from-black/65  to-black/10" />
             <div className="absolute lg:inset-x-6 inset-x-2 bottom-4 z-20">
-              <p className="text-white font-primary md:text-2xl text-xl">{src.title}</p>
+              <p className="text-white font-primary md:text-2xl text-xl">
+                {src.title}
+              </p>
               <ul className="flex flex-wrap gap-2 mt-2">
                 {src.tags.map((tag, i) => (
                   <li

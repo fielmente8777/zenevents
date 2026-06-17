@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <main className="background-color-1">
       <ImageBanner {...landingPageData.bannerData} />
-      <Section defaultPadding={false} className="md:hidden block">
-        <Container>
+      <Section defaultPadding={false} className="md:hidden block ">
+        <Container className="bg-secondary/30">
           <div className="py-6 flex flex-col gap-5 w-full mx-auto" id="form">
             <Form1 />
             <p
@@ -26,6 +26,7 @@ export default function Home() {
         </Container>
       </Section>
       <About {...landingPageData.aboutData} />
+      <div className="h-0.5 w-full max_screen_width bg-[linear-gradient(to_right,#fff,#a8874a,#fff)]" />
       <Events {...landingPageData.events} />
       <WhyZenEvent {...landingPageData.whyZenEvent} />
       <SlidingGallery images={landingPageData.slidingGallery} />

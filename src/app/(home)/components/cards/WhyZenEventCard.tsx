@@ -5,9 +5,9 @@ const WhyZenEventCard: React.FC<
 > = ({ title, description, className }) => {
   return (
     <div
-      className={`bg-white border border-[#E8D8D0] lg:rounded-[40px] p-4 lg:p-6 flex flex-col gap-2 ${className}`}
+      className={`bg-white border border-[#E8D8D0] lg:rounded-[40px] rounded-2xl p-4 lg:p-6 flex flex-col gap-2 ${className}`}
     >
-      <p className="font-bold font-primary text-base md:text-2xl text-primary flex flex-wrap gap-2">
+      <p className="font-bold font-primary text-base md:text-2xl text-primary flex max-lg:flex-wrap gap-2">
         <span>
           <Foo />{" "}
         </span>{" "}

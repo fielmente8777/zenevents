@@ -16,9 +16,20 @@ const About: React.FC<AboutProps> = ({
   cards,
 }) => {
   return (
-    <SectionWithContainer>
+    <SectionWithContainer sectionClassName="relative" containerId="#about">
+      <div className="w-fit absolute top-2 right-2">
+        <div className="lg:w-36.5 w-20 aspect-square relative">
+          <Image
+            src="/SVG.png"
+            alt="alt"
+            fill
+            sizes="146px"
+            className="animate-[spin_8s_linear_infinite]"
+          />
+        </div>
+      </div>
       <div className="space-y-3 text-center md:mb-10 mb-6">
-        <p className="text-sm tracking-widest mx-auto w-fit uppercase border border-tertiary/30 rounded-full bg-tertiary/10 backdrop-blur-sm text-tertiary px-4 py-1">
+        <p className="text-sm  tracking-widest mx-auto w-fit uppercase border border-tertiary/30 rounded-full bg-tertiary/10 backdrop-blur-sm text-tertiary px-4 py-1">
           {tag}
         </p>
         <SectionHeading title={title} />
@@ -34,7 +45,7 @@ const About: React.FC<AboutProps> = ({
           />
         </div>
         <div className="flex flex-col gap-5 lg:gap-8">
-          <p className="text-dark">{description}</p>
+          <p className="text-dark text-center">{description}</p>
           <div className="w-full relative lg:hidden lg:aspect-4/3.75 aspect-[4/3.55]">
             <Image
               src={image}

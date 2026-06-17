@@ -26,9 +26,9 @@ export const landingPageData = {
   },
 
   aboutData: {
-    image: "/landing-page/about-us.jpg",
+    image: "/landing-page/about-us.png",
     tag: "Our Story",
-    title: "Where Zen Meets Celebration",
+    title: "Where <i class='text-primary'>Zen</i> Meets Celebration",
     description: [
       "Zen Events & Sushi was created for those who believe that every occasion deserves something extraordinary. We combine Japanese artistry with the timeless beauty of the cherry blossom to create events that are visually stunning and truly unforgettable.",
     ],
@@ -68,7 +68,7 @@ export const landingPageData = {
 
   events: {
     tag: "Events We Cater For",
-    title: "Every Occasion, Beautifully Catered",
+    title: "Every Occasion, <i class='text-primary'>Beautifully Catered</i>",
     description:
       "From intimate gatherings to grand celebrations, we bring the same care, quality, and elegance every time.",
 
@@ -114,7 +114,7 @@ export const landingPageData = {
 
   whyZenEvent: {
     tag: "Why Choose Us",
-    title: "Why Zen Events & Sushi",
+    title: "Why Zen Events <i class='text-primary'>& Sushi</i>",
 
     cards: [
       {
@@ -165,12 +165,15 @@ export const landingPageData = {
     "/landing-page/1.jpg",
     "/landing-page/2.jpg",
     "/landing-page/3.jpg",
+    "/landing-page/4.jpg",
+    "/landing-page/5.jpg",
+    "/landing-page/6.jpg",
   ],
 
   ourPromise: {
     tag: "OUR PROMISE",
 
-    title: "Every Celebration Deserves Something Extraordinary",
+    title: "Every Celebration Deserves <i class='text-[#E8B4A8]'>Something Extraordinary</i>",
 
     description:
       "At Zen Events & Sushi, we combine exquisite food, elegant presentation, and thoughtful service to create unforgettable moments. From intimate gatherings to grand celebrations, we bring harmony, flavour, and sophistication to every event.",
