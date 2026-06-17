@@ -14,7 +14,7 @@ interface SlidingGalleryProps {
 const SlidingGallery: React.FC<SlidingGalleryProps> = ({ images }) => {
   const { openGallery } = useWebContext();
   return (
-    <Section defaultPadding={false} className="relative">
+    <Section defaultPadding={false} className="relative" id="#gallery">
       <SwiperCarousel
         data={images}
         className="w-full demo"

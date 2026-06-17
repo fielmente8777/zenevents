@@ -14,6 +14,7 @@ const WhyZenEvent: React.FC<WhyZenEventProps> = ({
     <SectionWithContainer
       sectionClassName="background-color-3"
       containerClassName="md:space-y-12 space-y-6"
+      containerId="#why-choose-us"
     >
       <div className="flex flex-col gap-2.5 justify-center items-center">
         <p className="px-4 py-1 max-md:text-sm tracking-widest text-tertiary uppercase font-semibold border border-tertiary rounded-full bg-tertiary/10 shadow backdrop-blur-sm">

@@ -38,6 +38,7 @@ const Events: React.FC<EventsProps> = ({
     <SectionWithContainer
       containerClassName="md:space-y-12 space-y-6"
       sectionClassName="background-color-2 relative"
+      containerId="#events"
     >
       <div className="w-fit absolute top-2 right-2">
         <div className="lg:w-36.5 w-20 aspect-square relative">
