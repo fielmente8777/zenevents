@@ -6,6 +6,7 @@ import { WebProvider } from "@/context-api/WebContext";
 import LandingFooter from "@/components/footer/LandingFooter";
 import PopUpForm from "@/components/pop-up/PopUpForm";
 import ImagePopup from "@/components/pop-up/ImagePopup";
+import Script from "next/script";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -39,8 +40,7 @@ export const metaData: Metadata = {
   ],
 
   openGraph: {
-    title:
-      "Zen Events & Sushi | Bringing Blossom to Every Celebration",
+    title: "Zen Events & Sushi | Bringing Blossom to Every Celebration",
     description:
       "Where premium sushi meets beautifully styled, Zen-inspired events.",
   },
@@ -56,7 +56,7 @@ export const metaData: Metadata = {
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
-    }
+    },
   },
 };
 
@@ -78,6 +78,19 @@ export default function RootLayout({
           <ImagePopup />
         </WebProvider>
       </body>
+      {/* <!-- Eazbot Script (Next.js) --> */}
+      <Script id="chatbot-config" strategy="afterInteractive">
+        {`
+    window.eazbotConfig = {
+       ndid: "5617a084-5783-4bac-b299-bdb6e8e471bb",
+       hid: "11974255",
+    };
+  `}
+      </Script>
+      <Script
+        src="https://cb-script.dyq28lyxrazm2.amplifyapp.com/widget/lead-chatbot.js"
+        strategy="afterInteractive"
+      />
     </html>
   );
 }

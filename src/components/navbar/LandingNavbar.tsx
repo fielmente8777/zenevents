@@ -5,6 +5,8 @@ import { CalendarIcon } from "../buttons/LinkButton";
 import { navData } from "./navData";
 
 const LandingNavbar = () => {
+
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -29,13 +31,14 @@ const LandingNavbar = () => {
               />
             </div>
           </Link>
-          <ul className="lg:flex border hidden border-white/15 bg-white/10 backdrop-blur-lg px-5 py-2.5  rounded-full items-center gap-8 ml-36 w-fit self-center-safe">
+          {/* nav */}
+          <ul className="lg:flex border hidden border-white/15 bg-white/10 backdrop-blur-lg  rounded-full items-center  ml-36 w-fit nav">
             {navData.links.map((link, index) => (
               <li key={index}>
                 <button
                   onClick={() => scrollToSection(link.href)}
                   type="button"
-                  className="text-white"
+                  className="text-white px-5 py-2.5 "
                 >
                   {link.label}
                 </button>

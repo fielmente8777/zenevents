@@ -95,16 +95,6 @@ const ImageBanner: React.FC<ImageBannerProps> = ({
               ))}
             </div>
           </div>
-          <div
-            className="bg-[#FCF0EDCC] md:flex hidden py-6 px-2 rounded-[40px]  flex-col gap-3 "
-            id="form"
-          >
-            <Form2 singleDate />
-            <p
-              className="text-sm text-primary max-w-3xl text-center mx-auto"
-              dangerouslySetInnerHTML={{ __html: benefit }}
-            />
-          </div>
         </Container>
       </div>
     </Section>

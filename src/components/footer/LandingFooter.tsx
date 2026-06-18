@@ -17,7 +17,7 @@ const LandingFooter = () => {
     <footer className="max_screen_width bg-background3 text-white">
       <Container>
         <div className="grid md:py-14 py-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16">
-          <div className=" flex flex-col items-center max-w-xs gap-6">
+          <div className=" flex flex-col items-center w-full lg:max-w-xs gap-6">
             <div
               className={`relative 
                   w-35 aspect-4/4 md:w-30`}

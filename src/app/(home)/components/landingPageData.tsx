@@ -2,9 +2,10 @@ import { contact } from "@/utils/constent";
 
 export const landingPageData = {
   bannerData: {
-    image: "/landing-page/banner.png",
+    image: "/landing-page/bnr.png",
     tag: "LUXURY EVENT CATERING",
-    title: "Bringing Blossom <i class='text-secondary'>to Every Celebration</i>",
+    title:
+      "Bringing Blossom <i class='text-secondary'>to Every Celebration</i>",
     description:
       "Where premium sushi meets beautifully styled, Zen-inspired events.",
     cards: [
@@ -162,18 +163,19 @@ export const landingPageData = {
   },
 
   slidingGallery: [
-    "/landing-page/1.jpg",
-    "/landing-page/2.jpg",
-    "/landing-page/3.jpg",
-    "/landing-page/4.jpg",
-    "/landing-page/5.jpg",
-    "/landing-page/6.jpg",
+    "/landing-page/Apron-1.png",
+    "/landing-page/Cart-1.png",
+    "/landing-page/Stationary-1.png",
+    "/landing-page/Stationary-2.png",
+    "/landing-page/Sushi-Box-1.png",
+    "/landing-page/Sushi-Plate-1.png",
   ],
 
   ourPromise: {
     tag: "OUR PROMISE",
 
-    title: "Every Celebration Deserves <i class='text-[#E8B4A8]'>Something Extraordinary</i>",
+    title:
+      "Every Celebration Deserves <i class='text-[#E8B4A8]'>Something Extraordinary</i>",
 
     description:
       "At Zen Events & Sushi, we combine exquisite food, elegant presentation, and thoughtful service to create unforgettable moments. From intimate gatherings to grand celebrations, we bring harmony, flavour, and sophistication to every event.",

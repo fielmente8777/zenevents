@@ -34,7 +34,7 @@ const SlidingGallery: React.FC<SlidingGalleryProps> = ({ images }) => {
           },
         }}
         renderSlide={(src) => (
-          <div className="w-full aspect-[4/2.7] relative">
+          <div className="w-full aspect-4/4.5 relative">
             <Image
               src={src}
               alt={src}
