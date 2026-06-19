@@ -170,6 +170,15 @@ export const landingPageData = {
     "/landing-page/Sushi-Box-1.png",
     "/landing-page/Sushi-Plate-1.png",
   ],
+  slidingGallery2: [
+    "/landing-page/1.jpg",
+    "/landing-page/2.jpg",
+    "/landing-page/3.jpg",
+    "/landing-page/4.jpg",
+    "/landing-page/5.jpg",
+    "/landing-page/6.jpg",
+    
+  ],
 
   ourPromise: {
     tag: "OUR PROMISE",

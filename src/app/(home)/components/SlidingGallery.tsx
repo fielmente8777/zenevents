@@ -9,9 +9,10 @@ import { Autoplay } from "swiper/modules";
 
 interface SlidingGalleryProps {
   images: string[];
+  aspectRatio?: string;
 }
 
-const SlidingGallery: React.FC<SlidingGalleryProps> = ({ images }) => {
+const SlidingGallery: React.FC<SlidingGalleryProps> = ({ images , aspectRatio}) => {
   const { openGallery } = useWebContext();
   return (
     <Section defaultPadding={false} className="relative" id="#gallery">
@@ -23,7 +24,7 @@ const SlidingGallery: React.FC<SlidingGalleryProps> = ({ images }) => {
         loop={true}
         modules={[Autoplay]}
         speed={3000}
-        autoplay={{ delay: 0, pauseOnMouseEnter: true }}
+        autoplay={{ delay: 0}}
         breakpoints={{
           768: {
             slidesPerView: 2,
@@ -34,7 +35,7 @@ const SlidingGallery: React.FC<SlidingGalleryProps> = ({ images }) => {
           },
         }}
         renderSlide={(src) => (
-          <div className="w-full aspect-4/4.5 relative">
+          <div className={`w-full ${aspectRatio ? aspectRatio : "aspect-4/4.5"} relative`}>
             <Image
               src={src}
               alt={src}

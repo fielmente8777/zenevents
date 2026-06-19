@@ -29,8 +29,9 @@ export default function Home() {
       <About {...landingPageData.aboutData} />
       <div className="h-0.5 w-full max_screen_width bg-[linear-gradient(to_right,#fff,#a8874a,#fff)]" />
       <Events {...landingPageData.events} />
-      <WhyZenEvent {...landingPageData.whyZenEvent} />
       <SlidingGallery images={landingPageData.slidingGallery} />
+      <WhyZenEvent {...landingPageData.whyZenEvent} />
+      <SlidingGallery images={landingPageData.slidingGallery2}  aspectRatio="aspect-3/2"/>
       <OurPromise {...landingPageData.ourPromise} />
     </main>
   );

@@ -1,9 +1,6 @@
 import Image from "next/image";
-import { Container, Section } from "../sectionComponants";
 import LandingNavbar from "../navbar/LandingNavbar";
-import Form1 from "../forms/Form1";
-import { SectionHeading } from "../typography";
-import Form2 from "../forms/Form2";
+import { Container, Section } from "../sectionComponants";
 
 interface ImageBannerProps {
   tag: string;
@@ -19,7 +16,6 @@ interface ImageBannerProps {
 const ImageBanner: React.FC<ImageBannerProps> = ({
   title,
   image,
-  benefit,
   cards,
   tag,
   description,
