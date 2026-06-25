@@ -7,6 +7,9 @@ import LandingFooter from "@/components/footer/LandingFooter";
 import PopUpForm from "@/components/pop-up/PopUpForm";
 import ImagePopup from "@/components/pop-up/ImagePopup";
 import Script from "next/script";
+import Whatsapp from "@/components/ContactButton/WhatsApp";
+import { contact } from "@/utils/constent";
+import Call from "@/components/ContactButton/Call";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -73,6 +76,8 @@ export default function RootLayout({
       <body>
         <WebProvider>
           {children}
+          <Whatsapp whatsAppNumber={contact.phone[0]} />
+          <Call callNumber={contact.phone[0]} />
           <LandingFooter />
           <PopUpForm />
           <ImagePopup />
@@ -81,11 +86,11 @@ export default function RootLayout({
       {/* <!-- Eazbot Script (Next.js) --> */}
       <Script id="chatbot-config" strategy="afterInteractive">
         {`
-    window.eazbotConfig = {
-       ndid: "5617a084-5783-4bac-b299-bdb6e8e471bb",
-       hid: "11974255",
-    };
-  `}
+          window.eazbotConfig = {
+            ndid: "5617a084-5783-4bac-b299-bdb6e8e471bb",
+            hid: "11974255",
+          };
+        `}
       </Script>
       <Script
         src="https://cb-script.dyq28lyxrazm2.amplifyapp.com/widget/lead-chatbot.js"

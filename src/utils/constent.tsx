@@ -1,22 +1,21 @@
-export const enCodeText = encodeURIComponent(`Hello Alpha Wellness Resort,
-I would like to make a reservation.
-Please confirm availability and booking details.
+export const enCodeText = encodeURIComponent(`Hello zen events,
+I want to know more about your services,
 Thank you.`);
 
 
 export const contact = {
-  email: "info@demoemail.com",
-  mapUrl: "",
-  phone: ["+91 XXXXX XXXXX"],
+  email: "zeneventsandcatering@gmail.com",
+  mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2647.2720254530645!2d-0.7414243877593273!3d51.821373082787154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876585cb7a53f37%3A0x4e8bb682e3779c39!2sCollege%20Road%20North%20Business%20Park!5e1!3m2!1sen!2sin!4v1782366303242!5m2!1sen!2sin",
+  phone: ["+91 77740 90167"],
   address:
-    "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-  addressLink: "https://maps.app.goo.gl/557Jw5c9vVggGLQU6",
+    "College Road business park, Aylesbury",
+  addressLink: "https://maps.app.goo.gl/AAgGYQVpWXbojHSD9",
   socialMedia: {
     facebook: "https://www.facebook.com",
     instagram: "https://www.instagram.com/",
   },
-  callCta: `tel:+91 XXXXX XXXXX`,
-  WhatsappCta: `https://wa.me/+91 XXXXX XXXXX?text=${enCodeText}`,
+  callCta: `tel:+917774090167`,
+  WhatsappCta: `https://wa.me/+917774090167?text=${enCodeText}`,
   // formDomain: "",
   formDomain: "testmulti", //for testing
   formHid: "",
