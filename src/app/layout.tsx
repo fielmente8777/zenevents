@@ -120,9 +120,9 @@ export default function RootLayout({
       <Script id="chatbot-config" strategy="afterInteractive">
         {`
           window.eazbotConfig = {
-            ndid: "5617a084-5783-4bac-b299-bdb6e8e471bb",
-            hid: "11974255",
-          };
+          ndid: "c4f6099b-e0b8-4ff5-8d80-734dd2985312",
+          hid: "41446770",
+        };
         `}
       </Script>
       <Script
