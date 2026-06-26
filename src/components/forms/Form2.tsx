@@ -26,7 +26,7 @@ const Form2: React.FC<Form2Props> = ({
   rounded = false,
   singleDate = false,
 }) => {
-  const [countryCode, setCountryCode] = useState("+91");
+  const [countryCode, setCountryCode] = useState("+44");
 
   const {
     formData,
